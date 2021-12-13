@@ -9,7 +9,6 @@ public class BotMovement : MonoBehaviour
     public PlayerStats PlayerStats;
     public SpriteRenderer SpriteCranberry;
     //Varibles
-    float playerHeight = 1f;
     private float SidewaysInput;
     private float ForwardsInput;
     public float PlayerSpeed;
