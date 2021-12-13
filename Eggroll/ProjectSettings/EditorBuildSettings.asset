@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/TitleSplashScreen.unity
     guid: 0f31f86163d8ce74399878a52ed5e69d
   - enabled: 1
+    path: Assets/StartMenu.unity
+    guid: 27f2fd9d038646340ba28dce1fbd9062
+  - enabled: 1
+    path: Assets/Options Menu.unity
+    guid: da3c0b5776e18984fa57fb5e31495113
+  - enabled: 1
     path: Assets/FirstLevel.unity
     guid: cfca178667d8d204aa566039890b7abc
   m_configObjects: {}
