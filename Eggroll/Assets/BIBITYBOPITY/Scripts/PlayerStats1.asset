@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba789d06152666e4790dd9eaaa005ec5, type: 3}
   m_Name: PlayerStats1
   m_EditorClassIdentifier: 
-  LookSens: 10
   moveSpeed: 10
   speedMultiplier: 10
-  SideSpeed: 0.5
   drag: 2
-  jumpforce: 30
   Grav: 5

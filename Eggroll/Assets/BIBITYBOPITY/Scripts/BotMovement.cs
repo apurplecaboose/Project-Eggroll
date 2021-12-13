@@ -12,11 +12,7 @@ public class BotMovement : MonoBehaviour
     float playerHeight = 1f;
     private float SidewaysInput;
     private float ForwardsInput;
-    public bool isGrounded;
     public float PlayerSpeed;
-
-    //Raycasts
-    public RaycastHit GroundedRay;
 
     public Animator ani;
     public Rigidbody rb;
@@ -28,21 +24,19 @@ public class BotMovement : MonoBehaviour
     /**************************************/
     public void Update()
     {
-        SunshineRays();
+        
+        
+        
+        
         ControlDrag();
         SidewaysInput = Input.GetAxisRaw("Horizontal");
         ForwardsInput = Input.GetAxisRaw("Vertical");
-        print(ForwardsInput);
 
         ////flipscript
         if (SidewaysInput > 0f)
             SpriteCranberry.flipX = false;
         else if (SidewaysInput < 0f)
             SpriteCranberry.flipX = true;
-    }
-    void SunshineRays()
-    {    
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight / 2 + 1f);
     }
     void ControlDrag()
     {
@@ -73,7 +67,7 @@ public class BotMovement : MonoBehaviour
     {
     ani.SetFloat("SideMotion", Mathf.Abs(SidewaysInput) - ForwardsInput);
     
-    if (ForwardsInput>0.1)
+    if (ForwardsInput > 0)
         {
             ani.SetBool("MovingBack", true);
         }
