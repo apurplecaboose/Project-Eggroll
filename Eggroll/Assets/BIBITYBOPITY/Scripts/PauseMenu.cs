@@ -65,12 +65,14 @@ public class PauseMenu : MonoBehaviour
     {
         PauseUILay.SetActive(false);
         Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Confined;
         GameisPaused = false;
     }
     public void PauseGame()
     {
         PauseUILay.SetActive(true);
         Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
         GameisPaused = true;
     }
     public void QuitGame()
