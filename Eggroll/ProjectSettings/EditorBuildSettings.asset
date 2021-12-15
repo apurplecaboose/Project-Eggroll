@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Options Menu.unity
     guid: da3c0b5776e18984fa57fb5e31495113
   - enabled: 1
+    path: Assets/Level select screen.unity
+    guid: 433c52553c7ded54a95e31a5175abf80
+  - enabled: 1
     path: Assets/FirstLevel.unity
     guid: cfca178667d8d204aa566039890b7abc
+  - enabled: 1
+    path: Assets/Level2.unity
+    guid: ef5ea514e99e0ec4cb69e6d06a64d78c
   m_configObjects: {}
