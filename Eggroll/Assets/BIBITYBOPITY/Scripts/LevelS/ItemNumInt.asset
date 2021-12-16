@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c81983c94209d4e9a7c8cffe458de3, type: 3}
   m_Name: ItemNumInt
   m_EditorClassIdentifier: 
-  ItemNumberInt: 3
-  TargetNumLv1: 10
+  ItemNumberInt: 18
+  TargetNumLv1: 18
   TargetNumLv2: 10
   TargetNumLv3: 10
