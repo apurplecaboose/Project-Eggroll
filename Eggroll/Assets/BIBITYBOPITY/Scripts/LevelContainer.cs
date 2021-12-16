@@ -8,7 +8,9 @@ using UnityEngine.UI;
 public class LevelContainer : ScriptableObject
 {
     public int PlayerLevel = 1;
-    public bool Level2Unlocked = false;
-    public bool Level3Unlocked = false;
     public bool AllLevelsCleared = false;
+
+    public bool Level1Cleared = false;
+    public bool Level2Cleared = false;
+    public bool Level3Cleared = false;
 }

@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fab3e7218a1a8d488861b911f291537, type: 3}
   m_Name: LevelContainer
   m_EditorClassIdentifier: 
-  PlayerLevel: 0
+  PlayerLevel: 10
+  AllLevelsCleared: 0
+  Level1Cleared: 0
+  Level2Cleared: 0
+  Level3Cleared: 0
