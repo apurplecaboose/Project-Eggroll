@@ -9,6 +9,7 @@ public class OrderOfOperations : MonoBehaviour
     public GameObject FoodHere;
     public GameObject NextCollider;
     public GameObject OrderofOperations;
+    public GameObject Uinteract;
 
     private void Update()
     {
@@ -30,8 +31,8 @@ public class OrderOfOperations : MonoBehaviour
                     FoodHere.SetActive(true);
                 }
                 NextCollider.SetActive(true);
+                Uinteract.SetActive(false);
                 ItemNumber.ItemNumberInt += 1;
-                Debug.Log(ItemNumber.ItemNumberInt);
                 OrderofOperations.SetActive(false);
             }
         }
@@ -39,13 +40,12 @@ public class OrderOfOperations : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        //Enable Interact UI
-        Debug.Log("entered");
+        Uinteract.SetActive(true);
         entered = true;
         
     }
     private void OnTriggerExit(Collider other)
     {
-        //Disable Interact UI
+        Uinteract.SetActive(false);
     }
 }

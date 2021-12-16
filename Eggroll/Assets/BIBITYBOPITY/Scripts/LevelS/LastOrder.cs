@@ -8,6 +8,7 @@ public class LastOrder : MonoBehaviour
     public ItemNumber ItemNumber;
     public GameObject FoodHere;
     public GameObject OrderofOperations;
+    public GameObject Uinteract;
 
     private void Update()
     {
@@ -28,6 +29,7 @@ public class LastOrder : MonoBehaviour
                 {
                     FoodHere.SetActive(true);
                 }
+                Uinteract.SetActive(false);
                 ItemNumber.ItemNumberInt += 1;
                 OrderofOperations.SetActive(false);
             }
@@ -36,13 +38,11 @@ public class LastOrder : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        //Enable Interact UI
-        Debug.Log("entered");
+        Uinteract.SetActive(true);
         entered = true;
-
     }
     private void OnTriggerExit(Collider other)
     {
-        //Disable Interact UI
+        Uinteract.SetActive(false);
     }
 }
