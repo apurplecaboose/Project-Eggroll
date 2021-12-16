@@ -807,8 +807,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.6944866, y: 5, z: 3.6608334}
+  m_Center: {x: -1.5259953, y: 0, z: -0.6695833}
 --- !u!1001 &102059676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3269,8 +3269,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.4880142, y: 5, z: 4.064453}
+  m_Center: {x: -0.068294525, y: 0, z: 0.46777344}
 --- !u!43 &448117079
 Mesh:
   m_ObjectHideFlags: 0
@@ -7883,8 +7883,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.7836218, y: 5, z: 3.0004294}
+  m_Center: {x: 0.553442, y: 0, z: -1.1192015}
 --- !u!1001 &1053337713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8575,8 +8575,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.418211, y: 5, z: 3.1795416}
+  m_Center: {x: -1.2908945, y: 0, z: -0.9102292}
 --- !u!1001 &1183710351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9537,8 +9537,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 3}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.811157, y: 5, z: 3}
+  m_Center: {x: -0.09442139, y: 0, z: 0}
 --- !u!4 &1346027861
 Transform:
   m_ObjectHideFlags: 0
@@ -9612,8 +9612,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 5, z: 3.878108}
+  m_Center: {x: 0, y: 0, z: 0.560946}
 --- !u!1001 &1360131952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9999,8 +9999,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.3932886, y: 5, z: 6.3621693}
+  m_Center: {x: -0.3033557, y: 0, z: -0.97374535}
 --- !u!4 &1418384489
 Transform:
   m_ObjectHideFlags: 0
@@ -10802,8 +10802,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.0774584, y: 5.124882, z: 3.2342157}
+  m_Center: {x: 0.186872, y: -0.06244111, z: -0.12991267}
 --- !u!43 &1477760856
 Mesh:
   m_ObjectHideFlags: 0
@@ -11315,8 +11315,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.1925287, y: 5, z: 4.7173605}
+  m_Center: {x: 0.40373564, y: 0, z: 0.14131975}
 --- !u!1001 &1517206212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15426,8 +15426,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.0826902, y: 3.9935663, z: 3.2158093}
+  m_Center: {x: -0.7896533, y: -0.50321686, z: -0.88509965}
 --- !u!4 &2020714311
 Transform:
   m_ObjectHideFlags: 0
@@ -16023,8 +16023,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.4308949, y: 5, z: 3.0192056}
+  m_Center: {x: -0.66305256, y: 0, z: -0.27472878}
 --- !u!1001 &2098067238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17938,6 +17938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ketamine
       objectReference: {fileID: 0}
+    - target: {fileID: 4605483179449284538, guid: 003fac99644ec144d936ac273f2af1a2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4605483179464949551, guid: 003fac99644ec144d936ac273f2af1a2, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -17986,6 +17990,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 813165148}
+    - target: {fileID: 4605483180005299469, guid: 003fac99644ec144d936ac273f2af1a2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.194046
+      objectReference: {fileID: 0}
     - target: {fileID: 4605483180063466010, guid: 003fac99644ec144d936ac273f2af1a2, type: 3}
       propertyPath: m_Mesh
       value: 
