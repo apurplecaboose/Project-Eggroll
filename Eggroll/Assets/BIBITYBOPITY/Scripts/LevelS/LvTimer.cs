@@ -55,7 +55,7 @@ public class LvTimer : MonoBehaviour
     {
         //display DED UI Element
         UIdeath.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene(LvNum);
     }
 }

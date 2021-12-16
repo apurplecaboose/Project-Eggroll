@@ -6,9 +6,16 @@ using UnityEngine.SceneManagement;
 public class ToLvSelect : MonoBehaviour
 {
     public Coroutine ReeCache;
+    public LevelContainer LvCont;
 
     void Update()
     {
+     if(LvCont.AllLevelsCleared)
+        {
+            StartCoroutine(ToCredits());
+        }
+
+
      if (Input.GetKeyDown(KeyCode.Space))
         {
             if(ReeCache != null)
@@ -23,6 +30,13 @@ public class ToLvSelect : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(3);
+    }
+
+
+    IEnumerator ToCredits()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(10);
     }
 
 }

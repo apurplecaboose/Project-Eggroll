@@ -972,6 +972,7 @@ GameObject:
   - component: {fileID: 134111252}
   - component: {fileID: 134111256}
   - component: {fileID: 134111257}
+  - component: {fileID: 134111258}
   m_Layer: 5
   m_Name: CkList n' Swap Icon
   m_TagString: Untagged
@@ -1096,6 +1097,21 @@ MonoBehaviour:
   Startingtime: 0
   CurrentTime: 0
   UIdeath: {fileID: 603664807}
+--- !u!114 &134111258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134111251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc15146832e2a344b8092483d2f76da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItmNum: {fileID: 11400000, guid: b9bb970459bd0a843852caedc6d16427, type: 2}
+  CurrentLvlNumb: 0
+  LvCont: {fileID: 11400000, guid: 49ed9fe793e90274f85fbd7ba7d3ed0c, type: 2}
 --- !u!4 &135621002 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 82b883ec1c2b1ed4c9fa584959371d6e, type: 3}

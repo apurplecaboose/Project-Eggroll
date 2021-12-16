@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/lv1complete.unity
     guid: 1d95f1bfe7cc44a45b06112ffae5d089
+  - enabled: 1
+    path: Assets/lv2complete.unity
+    guid: 200c3d6fd16699244931c2ef06d0d8a0
+  - enabled: 1
+    path: Assets/lv3 Complete.unity
+    guid: a9ed13bab6c317647b406c2361a7a6fb
+  - enabled: 1
+    path: Assets/Credits Screen.unity
+    guid: be6f93cadb56bbf4eaf3bca14656d870
   m_configObjects: {}

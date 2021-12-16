@@ -45,21 +45,6 @@ public class PauseMenu : MonoBehaviour
     }
     public void LevelStateStorage()
     {
-        switch (LevelContainer.PlayerLevel)
-        {
-            case 5:
-                LevelContainer.Level2Unlocked = true;
-                break;
-            case 6:
-                LevelContainer.Level2Unlocked = true;
-                LevelContainer.Level3Unlocked = true;
-                break;
-            case 7:
-                LevelContainer.Level2Unlocked = true;
-                LevelContainer.Level3Unlocked = true;
-                LevelContainer.AllLevelsCleared = true;
-                break;
-        }
     }
     public void ResumeGame()
     {
