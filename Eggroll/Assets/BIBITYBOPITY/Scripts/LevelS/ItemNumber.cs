@@ -10,4 +10,9 @@ public class ItemNumber : ScriptableObject
     public int TargetNumLv1 = 18;
     public int TargetNumLv2 = 10;
     public int TargetNumLv3 = 10;
+
+
+    public float Lv1Time = 4f;
+    public float Lv2Time = 4f;
+    public float Lv3Time = 4f;
 }
