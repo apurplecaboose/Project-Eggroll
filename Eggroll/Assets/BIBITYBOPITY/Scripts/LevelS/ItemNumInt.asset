@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c81983c94209d4e9a7c8cffe458de3, type: 3}
   m_Name: ItemNumInt
   m_EditorClassIdentifier: 
-  ItemNumberInt: 1
+  ItemNumberInt: 0
   TargetNumLv1: 18
-  TargetNumLv2: 10
+  TargetNumLv2: 18
   TargetNumLv3: 10
   Lv1Time: 4
   Lv2Time: 4
