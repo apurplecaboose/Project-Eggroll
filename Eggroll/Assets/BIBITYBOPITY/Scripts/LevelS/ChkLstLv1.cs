@@ -18,7 +18,7 @@ public class ChkLstLv1 : MonoBehaviour
        switch (ItNum.ItemNumberInt)
         {
             case 1:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Grab Pot</s><br>-Grab Pot Lid<br>-Fill Pot with Water");
+                TextfieldTMP.SetText("<font color=red><u>Instructions:</u><br><s>-Grab Pot</s><br>-Grab Pot Lid<br>-Fill Pot with Water</red>");
                 break;
             case 2:
                 TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Grab Pot<br>-Grab Pot Lid</s><br>-Fill Pot with Water");
