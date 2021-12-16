@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class SwapScript : MonoBehaviour
 {
+    public ItemNumber ItemNumber;
     public Animator ani;
     public GameObject Sprite1;
     public GameObject SPrite2;
     public bool Swapped = false;
-
+    private void Awake()
+    {
+        ItemNumber.ItemNumberInt = 0;
+    }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
