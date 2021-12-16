@@ -20,7 +20,14 @@ public class LastOrder : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                FoodHere.SetActive(false);
+                if (FoodHere.activeSelf)
+                {
+                    FoodHere.SetActive(false);
+                }
+                else
+                {
+                    FoodHere.SetActive(true);
+                }
                 ItemNumber.ItemNumberInt += 1;
                 OrderofOperations.SetActive(false);
             }
