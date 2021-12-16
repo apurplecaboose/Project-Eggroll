@@ -7,22 +7,17 @@ using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
 
     public void LoadLevelOne()
     {
         SceneManager.LoadScene(4);
+    }
+    public void LoadLevelTwo()
+    {
+        SceneManager.LoadScene(5);
+    }
+    public void LoadLevelThree()
+    {
+        SceneManager.LoadScene(6);
     }
 }
