@@ -4,37 +4,36 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PauseUILay;
     public LevelContainer LevelContainer;
     public Coroutine REEEE;
-    public static bool GameisPaused = false;
-    
+    bool GameisPaused = false;
+
+    public AudioMixer blender;
     private void Start()
     {
         Time.timeScale = 1f;
-        CurrentLevelChecker();
         Cursor.lockState = CursorLockMode.Confined;
     }
-    void CurrentLevelChecker()
-    {
-        if ((LevelContainer.PlayerLevel != SceneManager.GetActiveScene().buildIndex) & (LevelContainer.PlayerLevel < SceneManager.GetActiveScene().buildIndex))
-        {
-            LevelContainer.PlayerLevel = SceneManager.GetActiveScene().buildIndex;
-            LevelStateStorage();
-        }
-    }
+
     private void Update()
     {
-     if (Input.GetKeyDown(KeyCode.Escape) | Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape) | Input.GetKeyDown(KeyCode.P))
         {
+            if (GameisPaused) ResumeGame();
+            else PauseGame();
+
+            /*
             if (REEEE != null)
             {
                 StopCoroutine(REEEE);
             }
-            REEEE = StartCoroutine(DumbPause());
+            REEEE = StartCoroutine(DumbPause());\
+            */
         }
     }
     IEnumerator DumbPause()
@@ -43,8 +42,9 @@ public class PauseMenu : MonoBehaviour
         else PauseGame();
         yield return true;
     }
-    public void LevelStateStorage()
+    public void SliderVolume(float globalvolume)
     {
+        blender.SetFloat("MasterSlider", globalvolume);
     }
     public void ResumeGame()
     {
@@ -52,6 +52,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Confined;
         GameisPaused = false;
+        Debug.Log("Resuming");
     }
     public void PauseGame()
     {
@@ -62,8 +63,6 @@ public class PauseMenu : MonoBehaviour
     }
     public void QuitGame()
     {
-        CurrentLevelChecker();
-        //add saving functions
         Application.Quit();
     }
     public void OptionsMenu()

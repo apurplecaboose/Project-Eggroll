@@ -8,6 +8,13 @@ public class ToLvSelect : MonoBehaviour
     public Coroutine ReeCache;
     public LevelContainer LvCont;
 
+    private void Awake()
+    {
+        if (LvCont.Level1Cleared & LvCont.Level2Cleared & LvCont.Level3Cleared)
+        {
+            LvCont.AllLevelsCleared = true;
+        }
+    }
     void Update()
     {
      if(LvCont.AllLevelsCleared)
@@ -35,7 +42,7 @@ public class ToLvSelect : MonoBehaviour
 
     IEnumerator ToCredits()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(10);
     }
 

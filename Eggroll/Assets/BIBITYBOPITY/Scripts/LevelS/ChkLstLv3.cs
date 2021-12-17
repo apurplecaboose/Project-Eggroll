@@ -10,7 +10,7 @@ public class ChkLstLv3 : MonoBehaviour
     public ItemNumber ItNum;
     void Start()
     {
-        TextfieldTMP.SetText("<u>Instructions:</u><br>-Grab eggroll wrappers <br>-Wet eggroll wrappers<br>-Place eggroll wrappers on plate");
+        TextfieldTMP.SetText("<u>Instructions:</u><br>-Grab eggroll wrappers<br>-Wet wrappers<br>-Place wrappers on plate");
     }
 
     void Update()
@@ -18,58 +18,61 @@ public class ChkLstLv3 : MonoBehaviour
         switch (ItNum.ItemNumberInt)
         {
             case 1:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><color=red><s>-Grab eggroll wrappers</s></color><br>-Wet eggroll wrappers<br>-Place eggroll wrappers on plate");
+                TextfieldTMP.SetText("<u>Instructions:</u><s><color=#E80262><br>-Grab eggroll wrappers<br></s></color>-Wet wrappers<br>-Place wrappers on plate");
                 break;
             case 2:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Grab Pot<br>-Grab Pot Lid</s><br>-Fill Pot with Water");
+                TextfieldTMP.SetText("<u>Instructions:</u><s><color=#E80262><br>-Grab eggroll wrappers<br>-Wet wrappers</s></color><br>-Place wrappers on plate");
                 break;
             case 3:
-                TextfieldTMP.SetText("<u>Instructions:</u><br>-Boil water on Stove<br>-Find raw Meat<br>-Find Meat Tenderizer (Hammer)");
+                TextfieldTMP.SetText("<u>Instructions:</u><br>-Grab Carrots<br>-Grab Onions<br>-Grab Cabbage");
                 break;
             case 4:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Boil water on Stove</s><br>-Find raw Meat<br>-Find Meat Tenderizer (Hammer)");
+                TextfieldTMP.SetText("<u>Instructions:</u><s><color=#E80262><br>-Grab Carrots<br></s></color>-Grab Onions<br>-Grab Cabbage");
                 break;
             case 5:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Boil water on Stove<br>-Find raw Meat</s><br>-Find Meat Tenderizer (Hammer)");
+                TextfieldTMP.SetText("<u>Instructions:</u><s><color=#E80262><br>-Grab Carrots<br>-Grab Onions<br></s></color>-Grab Cabbage");
                 break;
             case 6:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Find raw Meat<br>-Find Meat Tenderizer (Hammer) </s><br>-Smash into Meatballs On cutting board");
+                TextfieldTMP.SetText("<u>Instructions:</u><br>-Grab Knife<br>-Cut Veggies<br>-Grab Cut Veggies");
                 break;
             case 7:
-                TextfieldTMP.SetText("<u>Instructions:</u><br>-Grab Uncooked Pasta<br>-Add uncooked pasta to the boiling water<br>-Find Tomatoes");
+                TextfieldTMP.SetText("<u>Instructions:</u><br><s><color=#E80262>-Grab Knife</s></color><br>-Cut Veggies<br>-Grab Cut Veggies");
                 break;
             case 8:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Grab Uncooked Pasta</s><br>-Add uncooked pasta to the boiling water<br>-Find Tomatoes");
+                TextfieldTMP.SetText("<u>Instructions:</u><br><s><color=#E80262>-Grab Knife<br>-Cut Veggies</s></color><br>-Grab Cut Veggies");
                 break;
             case 9:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Add uncooked pasta to the boiling water</s><br>-Find Tomatoes<br>-Find Bottle of Oil(glass)");
+                TextfieldTMP.SetText("<u>Instructions:</u><br>-Grab Meat<br>-Grab Meat Tenderizer(Hammer)<br>-Tenderize Meat");
                 break;
             case 10:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Add uncooked pasta to the boiling water<br>-Find Tomatoes</s><br>-Find Bottle of Oil(glass)");
+                TextfieldTMP.SetText("<u>Instructions:</u><br><s><color=#E80262>-Grab Meat<br></s></color>-Grab Meat Tenderizer(Hammer)<br>-Tenderize Meat");
                 break;
             case 11:
-                TextfieldTMP.SetText("<u>Instructions:</u><s><br>-Find Bottle of Oil(glass)</s><br>-find frying pan<br>-Place frying pan on stove");
+                TextfieldTMP.SetText("<u>Instructions:</u><br><s><color=#E80262>-Grab Meat<br>-Grab Meat Tenderizer(Hammer)</s></color><br>-Tenderize Meat");
                 break;
             case 12:
-                TextfieldTMP.SetText("<u>Instructions:</u><s><br>-Find Bottle of Oil(glass)<br>-find frying pan</s><br>-Place frying pan on stove");
+                TextfieldTMP.SetText("<u>Instructions:</u><br>-Grab Tenderized Meat<br>-Grab Pan<br>-Put Pan on Stove");
                 break;
             case 13:
-                TextfieldTMP.SetText("<u>Instructions:</u><br>-Grab pasta pot<br>-Strain pasta out in the sink<br>-Throw the pasta in the pan");
+                TextfieldTMP.SetText("<u>Instructions:</u><s><color=#E80262><br>-Grab Tenderized Meat</s></color><br>-Grab Pan<br>-Put Pan on Stove");
                 break;
             case 14:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Grab pasta pot</s><br>-Strain pasta out in the sink<br>-Throw the pasta in the pan");
+                TextfieldTMP.SetText("<u>Instructions:</u><s><color=#E80262><br>-Grab Tenderized Meat<br>-Grab Pan</s></color><br>-Put Pan on Stove");
                 break;
             case 15:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Strain pasta out in the sink</s><br>-Throw the pasta in the pan<br>-Find Cheese(Slices)");
+                TextfieldTMP.SetText("<u>Instructions:</u><br>-Fry Veggies and Meat<br>-Grab Wrappers<br>-Wrap Veggies and Meat");
                 break;
             case 16:
-                TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Strain pasta out in the sink<br>-Throw the pasta in the pan</s><br>-Find Cheese(Slices)");
+                TextfieldTMP.SetText("<u>Instructions:</u><br><s><color=#E80262>-Fry Veggies and Meat</s></color><br>-Grab Wrappers<br>-Wrap Veggies and Meat");
                 break;
             case 17:
-                TextfieldTMP.SetText("<u>Instructions:</u><s><br>-Throw the pasta in the pan<br>-Find Cheese(Slices)</s><br>-Add Cheese to pan");
+                TextfieldTMP.SetText("<u>Instructions:</u><br><s><color=#E80262>-Fry Veggies and Meat<br>-Grab Wrappers</s></color><br>-Wrap Veggies and Meat");
                 break;
             case 18:
-                TextfieldTMP.SetText("<u>Instructions:</u><s><br>-Throw the pasta in the pan<br>-Find Cheese(Slices)<br>-Add Cheese to pan");
+                TextfieldTMP.SetText("<u>Instructions:</u><br>-Fry Again");
+                break;
+            case 19:
+                TextfieldTMP.SetText("<u>Instructions:</u><s><color=#E80262><br>-Fry Again</s></color>");
                 break;
         }
     }
