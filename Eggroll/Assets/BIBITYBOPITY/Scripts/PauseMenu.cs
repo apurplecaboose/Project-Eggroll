@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
-using UnityEngine.UI;
 using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
@@ -26,14 +24,6 @@ public class PauseMenu : MonoBehaviour
         {
             if (GameisPaused) ResumeGame();
             else PauseGame();
-
-            /*
-            if (REEEE != null)
-            {
-                StopCoroutine(REEEE);
-            }
-            REEEE = StartCoroutine(DumbPause());\
-            */
         }
     }
     IEnumerator DumbPause()
@@ -52,7 +42,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Confined;
         GameisPaused = false;
-        Debug.Log("Resuming");
     }
     public void PauseGame()
     {
