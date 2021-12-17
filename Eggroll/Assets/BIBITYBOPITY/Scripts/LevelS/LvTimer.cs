@@ -43,7 +43,7 @@ public class LvTimer : MonoBehaviour
         if (CurrentTime >= 0)
         {
             TimeSpan time = TimeSpan.FromSeconds(CurrentTime);
-            TimerTextFeild.SetText(time.Minutes.ToString() + ":" + time.Seconds.ToString());
+            TimerTextFeild.SetText(time.Minutes.ToString() + ":" + time.Seconds.ToString("00"));
         }
         else
         {
