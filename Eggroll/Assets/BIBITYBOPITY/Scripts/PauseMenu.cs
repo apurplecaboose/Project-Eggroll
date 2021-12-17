@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -11,21 +12,16 @@ public class PauseMenu : MonoBehaviour
     public LevelContainer LevelContainer;
     public Coroutine REEEE;
     public static bool GameisPaused = false;
-    
+    public float volperfloat;
+    public float globalvolume;
+
+    public AudioMixer blender;
     private void Start()
     {
         Time.timeScale = 1f;
-        CurrentLevelChecker();
         Cursor.lockState = CursorLockMode.Confined;
     }
-    void CurrentLevelChecker()
-    {
-        if ((LevelContainer.PlayerLevel != SceneManager.GetActiveScene().buildIndex) & (LevelContainer.PlayerLevel < SceneManager.GetActiveScene().buildIndex))
-        {
-            LevelContainer.PlayerLevel = SceneManager.GetActiveScene().buildIndex;
-            LevelStateStorage();
-        }
-    }
+
     private void Update()
     {
      if (Input.GetKeyDown(KeyCode.Escape) | Input.GetKeyDown(KeyCode.P))
@@ -43,9 +39,20 @@ public class PauseMenu : MonoBehaviour
         else PauseGame();
         yield return true;
     }
-    public void LevelStateStorage()
+    public void SliderVolume(float globalvolume)
     {
+        blender.SetFloat("MasterSlider",globalvolume);
     }
+    public void InputVolume(string volumepercentagestring)
+    {
+        volperfloat = float.Parse(volumepercentagestring);
+        globalvolume = volperfloat / 100f;
+        volumepercentagestring = volperfloat.ToString();
+    }
+
+
+
+
     public void ResumeGame()
     {
         PauseUILay.SetActive(false);
@@ -62,8 +69,6 @@ public class PauseMenu : MonoBehaviour
     }
     public void QuitGame()
     {
-        CurrentLevelChecker();
-        //add saving functions
         Application.Quit();
     }
     public void OptionsMenu()
