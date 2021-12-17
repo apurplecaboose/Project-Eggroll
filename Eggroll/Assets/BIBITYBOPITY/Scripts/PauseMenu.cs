@@ -11,9 +11,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject PauseUILay;
     public LevelContainer LevelContainer;
     public Coroutine REEEE;
-    public static bool GameisPaused = false;
-    public float volperfloat;
-    public float globalvolume;
+    bool GameisPaused = false;
 
     public AudioMixer blender;
     private void Start()
@@ -24,13 +22,18 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
-     if (Input.GetKeyDown(KeyCode.Escape) | Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape) | Input.GetKeyDown(KeyCode.P))
         {
+            if (GameisPaused) ResumeGame();
+            else PauseGame();
+
+            /*
             if (REEEE != null)
             {
                 StopCoroutine(REEEE);
             }
-            REEEE = StartCoroutine(DumbPause());
+            REEEE = StartCoroutine(DumbPause());\
+            */
         }
     }
     IEnumerator DumbPause()
@@ -41,24 +44,15 @@ public class PauseMenu : MonoBehaviour
     }
     public void SliderVolume(float globalvolume)
     {
-        blender.SetFloat("MasterSlider",globalvolume);
+        blender.SetFloat("MasterSlider", globalvolume);
     }
-    public void InputVolume(string volumepercentagestring)
-    {
-        volperfloat = float.Parse(volumepercentagestring);
-        globalvolume = volperfloat / 100f;
-        volumepercentagestring = volperfloat.ToString();
-    }
-
-
-
-
     public void ResumeGame()
     {
         PauseUILay.SetActive(false);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Confined;
         GameisPaused = false;
+        Debug.Log("Resuming");
     }
     public void PauseGame()
     {
