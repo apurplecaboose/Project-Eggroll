@@ -10,7 +10,7 @@ public class ChkLstLv3 : MonoBehaviour
     public ItemNumber ItNum;
     void Start()
     {
-        TextfieldTMP.SetText("<u>Instructions:</u><br>-RRRRRRRRRRRRRRRREEEEEEEEEEEEEEEEEEE");
+        TextfieldTMP.SetText("<u>Instructions:</u><br>-Grab eggroll wrappers <br>-Wet eggroll wrappers<br>-Place eggroll wrappers on plate");
     }
 
     void Update()
@@ -18,7 +18,7 @@ public class ChkLstLv3 : MonoBehaviour
         switch (ItNum.ItemNumberInt)
         {
             case 1:
-                TextfieldTMP.SetText("<font color=red><u>Instructions:</u><br><s>-Grab Pot</s><br>-Grab Pot Lid<br>-Fill Pot with Water</red>");
+                TextfieldTMP.SetText("<u>Instructions:</u><br><color=red><s>-Grab eggroll wrappers</s></color><br>-Wet eggroll wrappers<br>-Place eggroll wrappers on plate");
                 break;
             case 2:
                 TextfieldTMP.SetText("<u>Instructions:</u><br><s>-Grab Pot<br>-Grab Pot Lid</s><br>-Fill Pot with Water");
