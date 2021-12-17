@@ -15,7 +15,7 @@ MonoBehaviour:
   ItemNumberInt: 0
   TargetNumLv1: 18
   TargetNumLv2: 18
-  TargetNumLv3: 10
+  TargetNumLv3: 19
   Lv1Time: 4
   Lv2Time: 4
-  Lv3Time: 4
+  Lv3Time: 5
