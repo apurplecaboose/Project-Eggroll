@@ -14,5 +14,8 @@ public class ItemNumber : ScriptableObject
 
     public float Lv1Time = 4f;
     public float Lv2Time = 4f;
-    public float Lv3Time = 4f;
+    public float Lv3Time = 5f;
+    
+    public bool Normal = true;
+    public bool Hard = false;
 }

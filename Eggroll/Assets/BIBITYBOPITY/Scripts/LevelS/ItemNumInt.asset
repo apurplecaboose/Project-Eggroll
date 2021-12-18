@@ -19,3 +19,5 @@ MonoBehaviour:
   Lv1Time: 4
   Lv2Time: 4
   Lv3Time: 5
+  Normal: 1
+  Hard: 0
