@@ -16,8 +16,8 @@ MonoBehaviour:
   TargetNumLv1: 18
   TargetNumLv2: 18
   TargetNumLv3: 19
-  Lv1Time: 1
-  Lv2Time: 1
-  Lv3Time: 1
+  Lv1Time: 4
+  Lv2Time: 4
+  Lv3Time: 5
   Normal: 1
   Hard: 0
