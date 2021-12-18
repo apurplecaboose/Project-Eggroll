@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 50643180}
   - component: {fileID: 50643181}
   - component: {fileID: 50643182}
+  - component: {fileID: 50643183}
   m_Layer: 0
   m_Name: GrabMeat10
   m_TagString: Untagged
@@ -412,6 +413,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &50643183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50643179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1 &54468425
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,6 +438,7 @@ GameObject:
   - component: {fileID: 54468426}
   - component: {fileID: 54468427}
   - component: {fileID: 54468428}
+  - component: {fileID: 54468429}
   m_Layer: 0
   m_Name: GrabOnions5
   m_TagString: Untagged
@@ -475,6 +491,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &54468429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54468425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9cdf1aa16efdc94d9eae780bc52e487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueBeepUI: {fileID: 1345930611}
+  RedBeepUI: {fileID: 1089041405}
 --- !u!1001 &61138726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -615,6 +645,7 @@ GameObject:
   - component: {fileID: 99439545}
   - component: {fileID: 99439546}
   - component: {fileID: 99439547}
+  - component: {fileID: 99439548}
   m_Layer: 0
   m_Name: FryVeggiesNMeat16
   m_TagString: Untagged
@@ -652,7 +683,7 @@ MonoBehaviour:
   ItemNumber: {fileID: 11400000, guid: b9bb970459bd0a843852caedc6d16427, type: 2}
   FoodHere: {fileID: 1307266980}
   NextCollider: {fileID: 1423373385}
-  OrderofOperations: {fileID: 1018231765}
+  OrderofOperations: {fileID: 99439544}
   Uinteract: {fileID: 1018231765}
 --- !u!65 &99439547
 BoxCollider:
@@ -667,6 +698,77 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &99439548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99439544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
+--- !u!1001 &104099138
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 268.25388
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 520.46594
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 862.8766
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318176, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386830999568318177, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+      propertyPath: m_Name
+      value: RednBlueInteract
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
 --- !u!1001 &111192525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1319,6 +1421,7 @@ GameObject:
   - component: {fileID: 205778423}
   - component: {fileID: 205778424}
   - component: {fileID: 205778425}
+  - component: {fileID: 205778426}
   m_Layer: 0
   m_Name: FryAgain19
   m_TagString: Untagged
@@ -1356,6 +1459,8 @@ MonoBehaviour:
   FoodHere: {fileID: 895550146}
   OrderofOperations: {fileID: 205778422}
   Uinteract: {fileID: 1018231765}
+  RedUI: {fileID: 1089041405}
+  BlueUI: {fileID: 1345930611}
 --- !u!65 &205778425
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1369,6 +1474,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &205778426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205778422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1001 &207805284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2710,6 +2829,7 @@ GameObject:
   - component: {fileID: 380851387}
   - component: {fileID: 380851388}
   - component: {fileID: 380851389}
+  - component: {fileID: 380851390}
   m_Layer: 0
   m_Name: GrabWrappers1
   m_TagString: Untagged
@@ -2762,6 +2882,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &380851390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380851386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1 &389982554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2773,6 +2907,7 @@ GameObject:
   - component: {fileID: 389982555}
   - component: {fileID: 389982556}
   - component: {fileID: 389982557}
+  - component: {fileID: 389982558}
   m_Layer: 0
   m_Name: GrabCutVeggies9
   m_TagString: Untagged
@@ -2825,6 +2960,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &389982558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389982554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1001 &392020064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3157,6 +3306,7 @@ GameObject:
   - component: {fileID: 427104494}
   - component: {fileID: 427104495}
   - component: {fileID: 427104496}
+  - component: {fileID: 427104497}
   m_Layer: 0
   m_Name: WetWrappers2
   m_TagString: Untagged
@@ -3209,6 +3359,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &427104497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427104493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1001 &432398461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3569,6 +3733,7 @@ GameObject:
   - component: {fileID: 484037211}
   - component: {fileID: 484037212}
   - component: {fileID: 484037213}
+  - component: {fileID: 484037214}
   m_Layer: 0
   m_Name: PlaceWrappersOnPlate3
   m_TagString: Untagged
@@ -3621,6 +3786,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &484037214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484037210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!43 &484314035
 Mesh:
   m_ObjectHideFlags: 0
@@ -4664,6 +4843,7 @@ GameObject:
   - component: {fileID: 629698804}
   - component: {fileID: 629698805}
   - component: {fileID: 629698806}
+  - component: {fileID: 629698807}
   m_Layer: 0
   m_Name: GrabHammer11
   m_TagString: Untagged
@@ -4716,6 +4896,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &629698807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629698803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1001 &632695893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4898,6 +5092,7 @@ GameObject:
   - component: {fileID: 693834087}
   - component: {fileID: 693834088}
   - component: {fileID: 693834089}
+  - component: {fileID: 693834090}
   m_Layer: 0
   m_Name: SmashMeat12
   m_TagString: Untagged
@@ -4950,6 +5145,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &693834090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693834086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1001 &693893312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6472,6 +6681,7 @@ GameObject:
   - component: {fileID: 960914939}
   - component: {fileID: 960914940}
   - component: {fileID: 960914941}
+  - component: {fileID: 960914942}
   m_Layer: 0
   m_Name: GrabSmashedMeat13
   m_TagString: Untagged
@@ -6524,6 +6734,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &960914942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960914938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1001 &992267752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7478,6 +7702,7 @@ GameObject:
   - component: {fileID: 1074840686}
   - component: {fileID: 1074840687}
   - component: {fileID: 1074840688}
+  - component: {fileID: 1074840689}
   m_Layer: 0
   m_Name: GrabKnife7
   m_TagString: Untagged
@@ -7530,6 +7755,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1074840689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074840685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9cdf1aa16efdc94d9eae780bc52e487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueBeepUI: {fileID: 1345930611}
+  RedBeepUI: {fileID: 1089041405}
 --- !u!1001 &1081417893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7673,6 +7912,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 16ed83eac05263549b68c288feae424d, type: 3}
   m_PrefabInstance: {fileID: 1085671550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1089041405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5386830999157652511, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+  m_PrefabInstance: {fileID: 104099138}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1099054762
 PrefabInstance:
@@ -9600,6 +9844,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: df92d688b9f24bd46b0ee45ed6996b47, type: 3}
   m_PrefabInstance: {fileID: 1330930093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1345930611 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5386830999051992823, guid: d37ca89ba879d1540a9695cc1fd4b9e6, type: 3}
+  m_PrefabInstance: {fileID: 104099138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1348153322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9668,6 +9917,7 @@ GameObject:
   - component: {fileID: 1362153893}
   - component: {fileID: 1362153894}
   - component: {fileID: 1362153895}
+  - component: {fileID: 1362153896}
   m_Layer: 0
   m_Name: GrabCabbage6
   m_TagString: Untagged
@@ -9720,6 +9970,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1362153896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362153892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9cdf1aa16efdc94d9eae780bc52e487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueBeepUI: {fileID: 1345930611}
+  RedBeepUI: {fileID: 1089041405}
 --- !u!43 &1365352045
 Mesh:
   m_ObjectHideFlags: 0
@@ -10187,6 +10451,7 @@ GameObject:
   - component: {fileID: 1423373386}
   - component: {fileID: 1423373387}
   - component: {fileID: 1423373388}
+  - component: {fileID: 1423373389}
   m_Layer: 0
   m_Name: GrabWrappers17
   m_TagString: Untagged
@@ -10239,6 +10504,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1423373389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423373385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1001 &1428502158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11698,6 +11977,7 @@ GameObject:
   - component: {fileID: 1682259136}
   - component: {fileID: 1682259137}
   - component: {fileID: 1682259138}
+  - component: {fileID: 1682259139}
   m_Layer: 0
   m_Name: GrabPan14
   m_TagString: Untagged
@@ -11750,6 +12030,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1682259139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682259135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9cdf1aa16efdc94d9eae780bc52e487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueBeepUI: {fileID: 1345930611}
+  RedBeepUI: {fileID: 1089041405}
 --- !u!1001 &1682731962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12719,6 +13013,7 @@ GameObject:
   - component: {fileID: 1763286223}
   - component: {fileID: 1763286224}
   - component: {fileID: 1763286225}
+  - component: {fileID: 1763286226}
   m_Layer: 0
   m_Name: CutVeggies8
   m_TagString: Untagged
@@ -12771,6 +13066,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1763286226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763286222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!43 &1770455418
 Mesh:
   m_ObjectHideFlags: 0
@@ -12946,6 +13255,7 @@ GameObject:
   - component: {fileID: 1772489405}
   - component: {fileID: 1772489406}
   - component: {fileID: 1772489407}
+  - component: {fileID: 1772489408}
   m_Layer: 0
   m_Name: WrapVeggies and meat from pan18
   m_TagString: Untagged
@@ -12998,6 +13308,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1772489408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772489404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!43 &1777676579
 Mesh:
   m_ObjectHideFlags: 0
@@ -13350,6 +13674,7 @@ GameObject:
   - component: {fileID: 1844473431}
   - component: {fileID: 1844473432}
   - component: {fileID: 1844473433}
+  - component: {fileID: 1844473434}
   m_Layer: 0
   m_Name: PanOnStove15
   m_TagString: Untagged
@@ -13402,6 +13727,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1844473434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844473430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a0a4e188f791418083988e110198d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedBeepUI: {fileID: 1089041405}
+  BlueBeepUI: {fileID: 1345930611}
 --- !u!1001 &1846714446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13779,6 +14118,7 @@ GameObject:
   - component: {fileID: 1987922391}
   - component: {fileID: 1987922392}
   - component: {fileID: 1987922393}
+  - component: {fileID: 1987922394}
   m_Layer: 0
   m_Name: GrabCarrots4
   m_TagString: Untagged
@@ -13831,6 +14171,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1987922394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987922390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9cdf1aa16efdc94d9eae780bc52e487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueBeepUI: {fileID: 1345930611}
+  RedBeepUI: {fileID: 1089041405}
 --- !u!1001 &2002933323
 PrefabInstance:
   m_ObjectHideFlags: 0
