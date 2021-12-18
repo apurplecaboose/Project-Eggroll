@@ -8,32 +8,41 @@ public class WOOOOBBLE : MonoBehaviour
     public Rigidbody rb1;
     public Rigidbody rb2;
     public ItemNumber ItemNumber;
+    bool CocoPuffs = true;
     float multiplier;
-    int randomInt;
-    private int WhenWinterRollsAround = 0;//12
-    Vector3[] VectorArray = { new Vector3(1, 0, 1), new Vector3(1, 0, 0), new Vector3(0, 0, 1), new Vector3(1, 0, 0), new Vector3(-1, 0, -1), new Vector3(0, 0, -1), new Vector3(-1, 0, 0), new Vector3(0, 0, -1)};
+    float randomfloat;
+    float randomfloat2;
+    private int WhenWinterRollsAround = 2;
+    
 
     void Start()
     {
-        StartCoroutine(RandomForce());
-        multiplier = 5f;
+        multiplier = 6.75f;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        randomInt = Random.Range(0, VectorArray.Length);
-
+        randomfloat = Random.Range(-1f, 1f);
+        randomfloat2 = Random.Range(-1f, 1f);
+        if(ItemNumber.ItemNumberInt >= WhenWinterRollsAround)
+        {
+            if(CocoPuffs)
+            {
+                StartCoroutine(RandomForce());
+                CocoPuffs = false;
+            }
+        }
     }
     IEnumerator RandomForce()
     {
         while (true) 
         {
-            if(WhenWinterRollsAround >= ItemNumber.ItemNumberInt)
+            if(ItemNumber.ItemNumberInt >= WhenWinterRollsAround)
             {
-                yield return new WaitForSeconds(0.5f);
-                rb1.AddForce(multiplier * VectorArray[randomInt], ForceMode.Impulse);
-                rb2.AddForce(multiplier*VectorArray[randomInt], ForceMode.Impulse);
+                yield return new WaitForSeconds(0.25f);
+
+                rb1.AddForce(new Vector3(randomfloat * multiplier, 0f, randomfloat2 * multiplier), ForceMode.Impulse);
+                rb2.AddForce(new Vector3(randomfloat * multiplier, 0f, randomfloat2 * multiplier), ForceMode.Impulse);
             }
         }
     }
