@@ -9,6 +9,8 @@ public class LastOrder : MonoBehaviour
     public GameObject FoodHere;
     public GameObject OrderofOperations;
     public GameObject Uinteract;
+    public GameObject RedUI;
+    public GameObject BlueUI;
 
     private void Update()
     {
@@ -29,6 +31,8 @@ public class LastOrder : MonoBehaviour
                 {
                     FoodHere.SetActive(true);
                 }
+                RedUI.SetActive(false);
+                BlueUI.SetActive(false);
                 Uinteract.SetActive(false);
                 ItemNumber.ItemNumberInt += 1;
                 OrderofOperations.SetActive(false);

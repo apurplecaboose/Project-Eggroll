@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Audio;
 
 public class LvTimer : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class LvTimer : MonoBehaviour
     public float CurrentTime;
     private int LvNum;
     public GameObject UIdeath;
+
+    public AudioSource source;
+
 
     void Start()
     {
@@ -54,8 +58,9 @@ public class LvTimer : MonoBehaviour
     IEnumerator PhatL()
     {
         //display DED UI Element
+        source.Stop();
         UIdeath.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6.5f);
         SceneManager.LoadScene(LvNum);
     }
 }

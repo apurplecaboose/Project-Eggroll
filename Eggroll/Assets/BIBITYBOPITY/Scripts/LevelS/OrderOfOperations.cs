@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OrderOfOperations : MonoBehaviour
 {
-    private bool entered = false;
+    public bool InCollider = false;
     public ItemNumber ItemNumber;
     public GameObject FoodHere;
     public GameObject NextCollider;
@@ -18,7 +18,7 @@ public class OrderOfOperations : MonoBehaviour
 
     private void ClickRegistration()
     {
-        if(entered)
+        if(InCollider)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -41,11 +41,12 @@ public class OrderOfOperations : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         Uinteract.SetActive(true);
-        entered = true;
+        InCollider = true;
         
     }
     private void OnTriggerExit(Collider other)
     {
         Uinteract.SetActive(false);
+        InCollider = false;
     }
 }
