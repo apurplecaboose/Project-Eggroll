@@ -7,7 +7,6 @@ using UnityEngine.Audio;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PauseUILay;
-    public LevelContainer LevelContainer;
     public Coroutine REEEE;
     bool GameisPaused = false;
 

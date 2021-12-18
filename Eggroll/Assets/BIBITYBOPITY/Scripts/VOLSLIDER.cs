@@ -14,6 +14,7 @@ public class VOLSLIDER : MonoBehaviour
     }
     public void BackButton()
     {
+        FindObjectOfType<AudioManager>().Play("SettingsSfx");
         SceneManager.LoadScene(1);
     }
 }
