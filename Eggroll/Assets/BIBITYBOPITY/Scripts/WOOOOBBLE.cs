@@ -12,7 +12,7 @@ public class WOOOOBBLE : MonoBehaviour
     float multiplier;
     float randomfloat;
     float randomfloat2;
-    private int WhenWinterRollsAround = 2;
+    private int WhenWinterRollsAround = 12;
     
 
     void Start()
