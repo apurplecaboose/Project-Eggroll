@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414738, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -270,7 +270,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 57215290}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1279720975}
+        m_TargetAssemblyTypeName: Difficuilty, Assembly-CSharp
+        m_MethodName: ClickedDifficulty
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &57215290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,7 +989,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 2
@@ -1522,6 +1534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1279720974}
   - component: {fileID: 1279720973}
+  - component: {fileID: 1279720975}
   m_Layer: 0
   m_Name: Script Container
   m_TagString: Untagged
@@ -1556,6 +1569,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279720975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279720972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f265744c9651d54ca7fd243cd6419e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textcont: {fileID: 670942327}
+  ItemNumber: {fileID: 11400000, guid: b9bb970459bd0a843852caedc6d16427, type: 2}
 --- !u!1 &1528197494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1847,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1741415081}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1279720975}
+        m_TargetAssemblyTypeName: Difficuilty, Assembly-CSharp
+        m_MethodName: ClickedDifficulty
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1741415081
 MonoBehaviour:
   m_ObjectHideFlags: 0
