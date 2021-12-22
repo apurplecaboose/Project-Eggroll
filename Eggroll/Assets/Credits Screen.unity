@@ -447,6 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 0}
+  BiggestREE: {fileID: 11400000, guid: b9bb970459bd0a843852caedc6d16427, type: 2}
 --- !u!4 &1126094825
 Transform:
   m_ObjectHideFlags: 0

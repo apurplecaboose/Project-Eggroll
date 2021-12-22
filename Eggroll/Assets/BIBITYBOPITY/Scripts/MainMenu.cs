@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
-
+    public ItemNumber BIGGESTREE;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
